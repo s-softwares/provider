@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Eshield &copy; 2014-2020 <a href="<?php echo base_url('admin/dashboard'); ?>">Eshield</a>.</strong>
+    <strong>Swaft &copy; 2022 <a href="<?php echo base_url('admin/dashboard'); ?>">Swaft</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <!-- <b>Version</b> 3.1.0-rc -->
