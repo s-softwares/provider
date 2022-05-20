@@ -1,0 +1,2 @@
+[07-Apr-2021 12:44:16 UTC] PHP Fatal error:  Cannot redeclare Api::get_all_banners() in /home/zj79u6beefaa/public_html/vendue/application/controllers/Api.php on line 3464
+[09-Dec-2021 06:53:56 UTC] PHP Fatal error:  Cannot redeclare Firebase_model::save_user_notification() in /home/zj79u6beefaa/public_html/eshield_multivendor/application/models/Firebase_model.php on line 23
