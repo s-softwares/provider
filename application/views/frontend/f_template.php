@@ -1,14 +1,9 @@
-<!-- not direct access -->
-<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
-
-<!-- load header -->
-<?php $this->load->view('admin/header');?>
-
-<!-- load sidebar -->
-<?php $this->load->view('admin/sidebar');?>
-
-<!-- load content -->
-<?php $this->load->view('admin/'.$page); ?>
-
-<!-- load footer -->
-<?php $this->load->view('admin/footer');?>
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+         <!-- Left navbar links -->
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+         </ul>
+</nav>
