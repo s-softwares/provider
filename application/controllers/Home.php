@@ -19,7 +19,7 @@ class Home extends CI_Controller
    {
       // $this->load->view('frontend/home');
       $data['page'] = 'home';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function sign_in()
@@ -129,7 +129,7 @@ class Home extends CI_Controller
 
 
       $data['page'] = 'sign_in';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function user_login()
@@ -157,7 +157,7 @@ class Home extends CI_Controller
    public function sign_up()
    {
       $data['page'] = 'sign_up';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function register()
@@ -314,26 +314,26 @@ class Home extends CI_Controller
    {
       // $this->load->view('frontend/services');
       $data['page'] = 'services';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function category_services()
    {
       // $this->load->view('frontend/category_services_new');
       $data['page'] = 'category_services';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function services_details()
    {
       $data['page'] = 'services_details';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function book_service()
    {
       $data['page'] = 'book_service';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function confirm_booking()
@@ -351,7 +351,7 @@ class Home extends CI_Controller
       );
 
       $data['page'] = 'booking_checkout';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
 
       // $like['res_id'] = $this->input->post('res_id');
       // $like['user_id'] = $this->input->post('user_id');
@@ -369,7 +369,7 @@ class Home extends CI_Controller
       // } else {
       //    $this->session->set_flashdata('error', 'Database Error.');
       //    $data['page'] = 'book_service';
-      //    $this->load->view('admin/template', $data);
+      //    $this->load->view('frontend/f_template', $data);
       // }
       // redirect(base_url('booking-checkout/' . $booking_id));
    }
@@ -384,7 +384,7 @@ class Home extends CI_Controller
       $data['booking'] = $this->db->get_where('booking', array('id' => $booking_id), 1)->row();
 
       $data['page'] = 'booking_checkout';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 
    public function place_order()
@@ -553,6 +553,6 @@ class Home extends CI_Controller
    public function booking_history()
    {
       $data['page'] = 'booking_history';
-      $this->load->view('admin/template', $data);
+      $this->load->view('frontend/f_template', $data);
    }
 }
