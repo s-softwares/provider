@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="<?php echo base_url(); ?>uploads/ez_logo.png" type="image/png" sizes="16x16">
-	<title>Eshield | Log in</title>
+	<title>Swaft | Log in</title>
 
 	<!-- Google Font: Source Sans Pro -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,7 +33,7 @@
 		<!-- /.login-logo -->
 		<div class="card card-outline card-primary">
 			<div class="card-header text-center">
-				<a href="#" class="h1"><b>Eshield</b> APP</a>
+				<a href="#" class="h1"><b>Swaft</b> APP</a>
 			</div>
 			<div class="card-body">
 				<!-- <p class="login-box-msg">Sign in to start your session</p> -->
