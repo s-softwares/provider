@@ -3277,20 +3277,24 @@ class Api extends CI_Controller
             
             // Send email & return status
             $send = $this->email->send();
+            $temp["response_code"] = "1";
+            $temp["message"] = "Order Updated";
+            $temp["status"] = "success";
+            echo json_encode($temp);
             
-            if ($send) {
-                $temp["response_code"] = "1";
-                $temp["message"] = "Order Updated";
-                $temp["status"] = "success";
-                echo json_encode($temp);
-                return;
-            } else {
-                $temp["response_code"] = "0";
-                $temp["message"] = "Mail Error, Order has been Updated!";
-                $temp["status"] = "failure";
-                echo json_encode($temp);
-                return;
-            }
+            // if ($send) {
+            //     $temp["response_code"] = "1";
+            //     $temp["message"] = "Order Updated";
+            //     $temp["status"] = "success";
+            //     echo json_encode($temp);
+            //     return;
+            // } else {
+            //     $temp["response_code"] = "0";
+            //     $temp["message"] = "Mail Error, Order has been Updated!";
+            //     $temp["status"] = "failure";
+            //     echo json_encode($temp);
+            //     return;
+            // }
         } else {
             $temp["response_code"] = "0";
             $temp["message"] = "Database Error!";
