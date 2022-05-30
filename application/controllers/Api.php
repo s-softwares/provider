@@ -619,11 +619,17 @@ class Api extends CI_Controller
 
 
          $this->load->library('email');
+         $config = array();
+         $config['protocol'] = 'smtp';
+         $config['smtp_host'] = 'smtp.gmail.com';
+         $config['smtp_user'] = 'pesapapp09@gmail.com';
+         $config['smtp_pass'] = 'svxhzsuqotpvrvjm';
+         $config['smtp_port'] = 25;
 
          // Mail config
          $to = $user->email;
-         $from = "keval.primocys@gmail.com";
-         $fromName = "Eshield App Team";
+         $from = "pesapapp09@gmail.com";
+         $fromName = "Swaft App Team";
          $mailSubject = "Password Reset Success";
 
          $config['mailtype'] = 'html';
@@ -681,11 +687,16 @@ class Api extends CI_Controller
 
 
          $this->load->library('email');
+         $config['protocol'] = 'smtp';
+         $config['smtp_host'] = 'smtp.gmail.com';
+         $config['smtp_user'] = 'pesapapp09@gmail.com';
+         $config['smtp_pass'] = 'svxhzsuqotpvrvjm';
+         $config['smtp_port'] = 25;
 
          // Mail config
          $to = $user->email;
-         $from = "keval.primocys@gmail.com";
-         $fromName = "Eshield App Team";
+         $from = "pesapapp09@gmail.com";
+         $fromName = "Swaft App Team";
          $mailSubject = "Password Reset Success";
 
          $config['mailtype'] = 'html';
@@ -3122,7 +3133,7 @@ class Api extends CI_Controller
             echo json_encode($result);
         } else {
             $result["response_code"] = "0";
-            $result["message"] = "servic Not Found";
+            $result["message"] = "service Not Found";
             $result['servic'] = [];
             $result["status"] = "failure";
             echo json_encode($result);
@@ -3242,14 +3253,19 @@ class Api extends CI_Controller
             $message .= "<p>Transaction ID: " . $pay['txn_id'] . "</p>";
             $message .= "<p>Amount Paid: " . $pay['amount'] . "</p>";
             $message .= "<p>Date: " . $date . "</p>";
-            $message .= '<p>Your Eshieldpro Team</p>';
+            $message .= '<p>Your Swaft Team</p>';
             
             $this->load->library('email');
+            $config['protocol'] = 'smtp';
+            $config['smtp_host'] = 'smtp.gmail.com';
+            $config['smtp_user'] = 'pesapapp09@gmail.com';
+            $config['smtp_pass'] = 'svxhzsuqotpvrvjm';
+            $config['smtp_port'] = 25;
             
             // Mail config
             $to = $user->email;
-            $from = "keval.primocys@gmail.com";
-            $fromName = "Eshield App Team";
+            $from = "pesapapp09@gmail.com";
+            $fromName = "Swaft App Team";
             $mailSubject = "Payment Success";
             
             $config['mailtype'] = 'html';
