@@ -635,7 +635,7 @@ $uri = $this->uri->segment(2);
             </li>
 
 
-            <!-- <li class="nav-item">
+             <li class="nav-item">
 
                <a href="#" class="nav-link">
 
@@ -687,7 +687,7 @@ $uri = $this->uri->segment(2);
 
                </ul>
 
-            </li> -->
+            </li>
 
 
          </ul>
