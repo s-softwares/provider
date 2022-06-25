@@ -4257,17 +4257,17 @@ class Api extends CI_Controller
          $products[$key]->product_image = base_url('uploads/product_images/') . $images[0];
       }
 
-      for ($i = 0; $i < count($products); $i++) {
-         $cat_id = $products[$i]->cat_id;
-         $categories = $this->db->get_where('product_category', array('id' => $cat_id), 1)->row();
-         if (empty($categories->c_name)) {
-            $c_name = "";
-         } else {
-            $c_name = $categories->c_name;
-         }
+      // for ($i = 0; $i < count($products); $i++) {
+      //    $cat_id = $products[$i]->cat_id;
+      //    $categories = $this->db->get_where('product_category', array('id' => $cat_id), 1)->row();
+      //    if (empty($categories->c_name)) {
+      //       $c_name = "";
+      //    } else {
+      //       $c_name = $categories->c_name;
+      //    }
 
-         $products[$i]->categories = $c_name;
-      }
+      //    $products[$i]->categories = $c_name;
+      // }
 
       if (empty($products)) {
          $temp["response_code"] = "1";

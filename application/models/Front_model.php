@@ -360,7 +360,7 @@ class Front_model extends CI_Model
    {
       $this->db->select('products.*');
       $this->db->from('products');
-      $this->db->where("cat_id", $cat_id);
+      //$this->db->where("cat_id", $cat_id);
       $this->db->order_by("product_id", "desc");
       $query = $this->db->get();
       return $query->result();
