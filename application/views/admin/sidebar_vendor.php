@@ -16,7 +16,7 @@ $uri = $this->uri->segment(2);
 
    <a href="<?php echo base_url('admin/dashboard'); ?>" class="brand-link">
 
-      <img src="<?php echo base_url(); ?>uploads/ez_logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="<?php echo base_url(); ?>uploads/Transparent_white.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
 
       <span class="brand-text font-weight-light">Eshield</span>
 
